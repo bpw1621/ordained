@@ -1,0 +1,10 @@
+graft docs
+prune docs/_build
+graft src
+graft tests
+
+include README.rst pyproject.toml tox.ini
+
+recursive-include resources *
+
+global-exclude *.py[cod] __pycache__ *.so

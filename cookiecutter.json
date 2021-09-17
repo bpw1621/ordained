@@ -1,0 +1,63 @@
+{
+  "full_name": "Bryan Patrick Wood",
+  "email": "bpw1621@gmail.com",
+  "github_username": "bpw1621",
+  "pypi_username": "bpw1621",
+  "project_name": "Python Package Template",
+  "project_slug": "{{cookiecutter.project_name.lower().replace(' ', '-').replace('-', '-')}}",
+  "package_slug": "{{cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_')}}",
+  "version": "0.0a0",
+  "project_description": "More opinionated Python package template code.",
+  "python_version": ["3.8", "3.6", "3.7", "3.9"],
+  "base_image": "python:{{cookiecutter.python_version}}",
+
+  "requires": {
+    "base": [
+      "dot-env",
+      "joblib",
+      "humnanize",
+      "more-itertools",
+      "pluggy",
+      "regex",
+      "requests",
+      "tqdm",
+      "importlib_resources; python_version < \"3.7\"",
+      "debtcollector"
+    ],
+    "api": [
+      "fastapi"
+    ],
+    "cli": [
+      "typer"
+    ],
+    "dev": [
+      "flake8",
+      "pretty_errors",
+      "tox",
+      "twine"
+    ],
+    "doc": [
+      "sphinx",
+      "sphinx_rtd_theme",
+      "towncrier"
+    ],
+    "gui": [
+      "streamlit"
+    ],
+    "nlp": [
+      "gensim",
+      "nltk",
+      "pyldavis",
+      "scattertext",
+      "spacy",
+      "stanza",
+      "textacy",
+      "wordcloud"
+    ],
+    "test": [
+      "pytest",
+      "pytest-cov",
+      "pytest-mock"
+    ]
+  }
+}
