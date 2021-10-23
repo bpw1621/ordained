@@ -8,14 +8,14 @@
   "package_slug": "{{cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_')}}",
   "version": "0.0a0",
   "project_description": "More opinionated Python package template code.",
-  "python_version": ["3.8", "3.6", "3.7", "3.9"],
+  "python_version": ["3.8", "3.6", "3.7", "3.9", "3.10"],
   "base_image": "python:{{cookiecutter.python_version}}",
 
-  "requires": {
+  "__requires": {
     "base": [
-      "dot-env",
+      "python-dotenv",
       "joblib",
-      "humnanize",
+      "humanize",
       "more-itertools",
       "pluggy",
       "regex",
