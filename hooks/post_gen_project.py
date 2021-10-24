@@ -19,8 +19,8 @@ subprocess.run(['git', 'remote', 'add', 'origin', git_remote])
 # if input(f'{" ".join(git_push_command)}? [no]:').lower().startswith('y'):
 #     subprocess.run(git_push_command)
 
-print('🎉🎉 Congratulations 🎉🎉, {{cookiecutter.project_slug}} has been created and an initial commit has been versioned!')
-print('Recommended next steps ...')
+print('🎉🎉 Congratulations 🎉🎉, {{cookiecutter.project_slug}} has been created and an initial commit has been '
+      'versioned! Recommended next steps ...\n')
 print('1. Create a virtual environment for your new project: python -m venv .venv')
 print('2. Look at __requires key in the cookiecutter.json file to identify relevant Python package recommendations')
 print('3. Install them, e.g., pip install -e .[base,dev,doc,test]')
