@@ -1,3 +1,22 @@
 [build-system]
 requires = ["setuptools >= 51.1.1", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py36, py37, py38, py39, py310
+
+[testenv]
+deps = pytest pytest-cov pytest-mock
+commands = pytest
+"""
+
+[tool.pytest.ini_options]
+collect_ignore = ["setup.py"]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = "tests"
+
+[tool.towncrier]
+directory = "newsfragments"

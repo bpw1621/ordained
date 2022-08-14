@@ -25,7 +25,8 @@
       "debtcollector"
     ],
     "api": [
-      "fastapi"
+      "fastapi",
+      "uvicorn[standard]"
     ],
     "cli": [
       "typer"
